@@ -22,7 +22,12 @@ const forecast = (latitude, longitude, callback) => {
           body.current.feelslike +
           " degrees. \nThere is a " +
           body.current.precip +
-          "% chance of rain."
+          "% chance of rain. " +
+          " The wind speed is: " +
+          body.current.wind_speed +
+          " km/hr. " +
+          " And the current date and time are: " +
+          body.location.localtime
       );
     }
   });
